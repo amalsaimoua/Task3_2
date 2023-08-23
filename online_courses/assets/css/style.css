@@ -7,13 +7,18 @@
 
 .navbar {
     background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .navbar-list {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-around;
-    padding: 10px;
+    padding: 10px 50px;
 }
 
 .navbar-list a {
@@ -27,24 +32,37 @@
     background-color: #555;
 }
 
-#home div {
+#home {
+    height: 100vh;
+    min-width:57em;;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    background-position: center;
+    text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../img/photo.jpg');
 }
 
-#home div p {
+#home p {
     background-color: rgba(255, 255, 255, 0.3);
     font-weight: bolder;
     font-size: xx-large;
     color: white;
-}
 
-.aboutContents,
+}
+.aboutContents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    
+}
+/* .aboutContents, */
 .servicesContent,
 .specializationContent,
 .teachersContent,
@@ -54,8 +72,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: max-content;
     gap: 50px;
+    padding: 5%;
+    width: 100%;
 }
 
 #about,
@@ -209,6 +229,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 
@@ -240,3 +261,10 @@ h1 {
     color: white;
     text-decoration: none;
 }
+/* 
+@media screen and (max-width: 300px) {
+    .home {
+        background-image: url('../img/photo.jpg');
+        width: 50vw;
+    }
+} */
