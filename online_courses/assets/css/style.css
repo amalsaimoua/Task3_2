@@ -16,7 +16,6 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
     justify-content: space-around;
     padding: 10px 50px;
 }
@@ -34,7 +33,7 @@
 
 #home {
     height: 100vh;
-    min-width:57em;;
+    min-width: 57em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,14 +53,15 @@
     color: white;
 
 }
-.aboutContents{
+
+.aboutContents {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 100vw;
-    
+    width: auto;
 }
+
 /* .aboutContents, */
 .servicesContent,
 .specializationContent,
@@ -79,20 +79,20 @@
 }
 
 #about,
-#home div,
 #specializations,
 #teachers,
 #contact {
-    height: 500px;
+/*     display: flex;
+    flex-wrap: wrap; */
 }
 
 
-.servicesContent,
+#services,
 .teachersContent,
 .contactContent {
     background-color: rgb(252, 212, 190);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .ourServicesCard,
@@ -173,7 +173,7 @@ h1 {
 
 
 #plans {
-    height: 650px;
+    /*  height: 650px; */
 }
 
 .plansContent {
@@ -229,7 +229,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
 
@@ -261,6 +261,7 @@ h1 {
     color: white;
     text-decoration: none;
 }
+
 /* 
 @media screen and (max-width: 300px) {
     .home {
